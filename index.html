@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Logistyki - Meblobranie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-10px); }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen flex items-center justify-center p-6 text-slate-800 font-sans">
+
+    <div class="max-w-4xl w-full">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-black text-slate-900 mb-2">Panel Logistyczny</h1>
+            <p class="text-slate-500 font-medium uppercase tracking-widest text-sm">Wybierz odpowiednie narzędzie</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <a href="https://logi-meblob.github.io/katalog-kontroli/" class="card-hover group relative bg-white p-8 rounded-[40px] shadow-xl shadow-slate-200/60 border border-slate-100 flex flex-col items-center text-center">
+                <div class="w-20 h-20 bg-blue-50 text-blue-600 rounded-3xl flex items-center justify-center text-4xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    🔍
+                </div>
+                <h2 class="text-2xl font-black text-slate-900 mb-3">Katalog Kontroli</h2>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    Baza danych uszkodzeń, kondycji (HDL/HDLS) oraz dokumentacja fotograficzna zwrotów.
+                </p>
+                <div class="mt-8 px-6 py-2 bg-slate-100 text-slate-400 font-bold rounded-xl text-xs uppercase tracking-widest group-hover:bg-blue-100 group-hover:text-blue-700 transition-colors">
+                    Otwórz narzędzie →
+                </div>
+            </a>
+
+            <a href="https://logi-meblob.github.io/parts/" class="card-hover group relative bg-white p-8 rounded-[40px] shadow-xl shadow-slate-200/60 border border-slate-100 flex flex-col items-center text-center">
+                <div class="w-20 h-20 bg-yellow-50 text-yellow-600 rounded-3xl flex items-center justify-center text-4xl mb-6 group-hover:bg-yellow-500 group-hover:text-white transition-colors">
+                    🛠️
+                </div>
+                <h2 class="text-2xl font-black text-slate-900 mb-3">Katalog Części</h2>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    Spis SKU części reklamacyjnych, nazewnictwo elementów oraz podgląd wizualny części.
+                </p>
+                <div class="mt-8 px-6 py-2 bg-slate-100 text-slate-400 font-bold rounded-xl text-xs uppercase tracking-widest group-hover:bg-yellow-100 group-hover:text-yellow-700 transition-colors">
+                    Otwórz narzędzie →
+                </div>
+            </a>
+
+        </div>
+
+        <div class="mt-16 text-center text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em]">
+            System zarządzania logistyką &copy; 2026 Meblobranie
+        </div>
+    </div>
+
+</body>
+</html>
